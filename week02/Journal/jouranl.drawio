@@ -1,0 +1,36 @@
+<mxfile host="65bd71144e">
+    <diagram id="-T2eEcuFhu-oXCnqsCeY" name="Page-1">
+        <mxGraphModel dx="837" dy="286" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Z81KIFm3MYqfmdasvzo8-36" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;pre style=&quot;&quot;&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span&gt;+------------------------+&lt;br&gt;&lt;/span&gt;&lt;span&gt;|         &lt;/span&gt;&lt;span&gt;Entry          &lt;/span&gt;&lt;span&gt;|&lt;br&gt;&lt;/span&gt;&lt;span&gt;+------------------------+&lt;br&gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;_date: &lt;/span&gt;&lt;span&gt;string        &lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;_promptText: &lt;/span&gt;&lt;span&gt;string  &lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;_entryText: &lt;/span&gt;&lt;span&gt;string   &lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;Display(): &lt;/span&gt;&lt;span&gt;void      &lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;GetDate(): &lt;/span&gt;&lt;span&gt;string    &lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;GetText(): &lt;/span&gt;&lt;span&gt;string    &lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;GetPrompt(): &lt;/span&gt;&lt;span&gt;string&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/pre&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="140" width="330" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="Z81KIFm3MYqfmdasvzo8-37" value="&lt;pre&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;--------------------+&lt;br&gt;|        Journal         |&lt;br&gt;+------------------------+&lt;br&gt; _entries: List&amp;lt;Entry&amp;gt;&lt;br&gt;AddEntry(prompt, response): void      &lt;br&gt;DisplayAll(): void                    &lt;br&gt; SaveToFile(filename): void            &lt;br&gt;    LoadFromFile(filename): void&lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;&lt;pre&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;ReplaceEntries(newEntries): &lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; font-family: Helvetica; white-space: normal;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;void&amp;nbsp;&lt;/font&gt;&lt;/b&gt; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/pre&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="330" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="Z81KIFm3MYqfmdasvzo8-38" value="&lt;pre&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+------------------------+&lt;br/&gt;|   PromptGenerator      |&lt;br/&gt;+------------------------+&lt;br/&gt; _prompts: List&amp;lt;string&amp;gt;&lt;br/&gt;&lt;br/&gt;GetRandomPrompt(): string &lt;br/&gt; ListPrompts(): List&amp;lt;string&amp;gt; &lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/pre&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="95" y="490" width="330" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="Z81KIFm3MYqfmdasvzo8-39" value="&lt;div&gt;&lt;pre&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+------------------------+&lt;br/&gt;|         Save           |&lt;br/&gt;+------------------------+&lt;br/&gt;SaveJournal(filename, entries): void &lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="490" width="330" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="Z81KIFm3MYqfmdasvzo8-40" value="&lt;div&gt;&lt;pre&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+------------------------+&lt;br&gt;|         Load           |&lt;br&gt;+------------------------+&lt;br&gt;                        &lt;br&gt; LoadJournal(filename): List&amp;lt;Entry&amp;gt;&lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="95" y="840" width="330" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="Z81KIFm3MYqfmdasvzo8-41" value="&lt;div&gt;&lt;pre&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+------------------------+&lt;br&gt;|         Menu           |&lt;br&gt;+------------------------+&lt;br&gt; ShowOptions(): void      &lt;br&gt; HandleSelection(): void &lt;br&gt;Start(): void         &lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="860" width="330" height="330" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="2Fzm9aolPX1IcGhSICXN" name="Page-2">
+        <mxGraphModel dx="56" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
