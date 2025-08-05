@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="kZAayC_1MVwALs3q7iAI" name="Page-1">
+        <mxGraphModel dx="867" dy="1301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;pre&gt;    Activity      |  (Base Class)&lt;br/&gt;-------------------------------&lt;br/&gt; - name: string           &lt;br/&gt; - description: string    &lt;br/&gt; - duration: int          &lt;br/&gt;---------------------------------&lt;br/&gt;+StartMessage()         &lt;br/&gt; + EndMessage()           &lt;br/&gt; + ShowSpinner(seconds)   &lt;br/&gt; + GetDurationFromUser()  &lt;br/&gt; + Run(): abstract        &lt;/pre&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="110" width="240" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;pre&gt; BreathingActivity&lt;/pre&gt;&lt;pre&gt;&lt;div&gt;------------------&lt;/div&gt;&lt;div&gt;&lt;pre&gt; - messages: List&amp;lt;string&amp;gt;&lt;/pre&gt;&lt;pre&gt;&lt;div&gt;------------------&lt;/div&gt;&lt;div&gt;&lt;pre&gt;+ Run() &lt;/pre&gt;&lt;pre&gt;&lt;div&gt;+ ShowCountdown()&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="470" width="240" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;pre&gt;ListingActivity&lt;/pre&gt;&lt;pre&gt;-----------------------------&lt;/pre&gt;&lt;pre&gt;&lt;div&gt;- prompts: List&amp;lt;string&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;pre&gt;- responses: List&amp;lt;string&amp;gt;&lt;/pre&gt;&lt;pre&gt;------------------------------&lt;/pre&gt;&lt;pre&gt;&lt;div&gt;+ Run()&lt;/div&gt;&lt;div&gt;&lt;pre&gt; + CountResponses()&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="470" width="250" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;pre&gt;ReflectingActivity&lt;/pre&gt;&lt;pre&gt;-----------------------------&lt;/pre&gt;&lt;pre&gt;&lt;div&gt;- prompts: List&amp;lt;string&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;pre&gt;- questions: List&amp;lt;string&amp;gt;&lt;/pre&gt;&lt;pre&gt;-----------------------------&lt;/pre&gt;&lt;pre&gt;&lt;div&gt;+ Run()&lt;/div&gt;&lt;div&gt;&lt;pre&gt;+ DisplayQuestions()&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="475" width="240" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.346;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.375;exitY=0.021;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="4" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="410" y="410" as="sourcePoint"/>
+                        <mxPoint x="410" y="340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;entryX=0.613;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="420" as="sourcePoint"/>
+                        <mxPoint x="330" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=classic;html=1;entryX=0.172;entryY=-0.016;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="420" as="sourcePoint"/>
+                        <mxPoint x="530" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Read me&lt;div&gt;Activity (Base Class)&lt;div&gt;shared attributes:name,&amp;nbsp;description,duration&lt;/div&gt;&lt;div&gt;Shared methods:&amp;nbsp;StartMessage(),EndMessage()&amp;nbsp;for consistent messaging,&amp;nbsp;ShowSpinner(),&amp;nbsp;GetDurationFromUser()&amp;nbsp;for UI behavior&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="-20" width="320" height="320" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
