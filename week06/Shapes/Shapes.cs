@@ -1,6 +1,6 @@
 using System;
 // Define the Shape class
-public class Shape
+public class Shapes
 {
     // Member variable to store the color of the shape
     private string color;
@@ -13,7 +13,7 @@ public class Shape
     }
 
     // Constructor that accepts a color and sets it
-    public Shape(string color)
+    public Shapes(string color)
     {
         this.color = color;
     }
@@ -24,5 +24,9 @@ public class Shape
     {
         // Base class doesn't define a specific shape, so return 0
         return 0;
+    }
+    public string GetColor()
+    {
+        return color;
     }
 }

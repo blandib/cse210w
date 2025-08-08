@@ -1,6 +1,6 @@
 using System;
 // Define the Square class that inherits from Shape
-public class Square : Shape
+public class Square : Shapes
 {
     // Private member variable to store the side length
     private double _side;
