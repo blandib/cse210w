@@ -34,7 +34,7 @@ public class SimpleGoal : Goal
 
     public override string GetDisplayString()
     {
-        string status = _isComplete ? "[X]" : "[ ]";
+        string status = _isComplete ? "[X]" : "[ X]";
         return $"{status} {_shortName} ({_description})";
     }
 }
