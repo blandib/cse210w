@@ -140,32 +140,21 @@ public class GoalManager
         Console.WriteLine("Goals saved.");
     }
 
-    public void LoadGoals()
-    {
-        if (File.Exists("goals.txt"))
-        {
-            string[] lines = File.ReadAllLines("goals.txt");
-            _score = int.Parse(lines[0]);
-            _goals.Clear();
-            for (int i = 1; i < lines.Length; i++)
-            {
-
-                Console.WriteLine($"Loaded: {lines[i]}");
-            }
-            Console.WriteLine("Goals loaded.");
-        }
-        else
-        {
-            Console.WriteLine("No saved goals found.");
-        }
-    }
-    public void LoadGoals(string filename)
+   public void LoadGoals()
 {
-    string[] lines = System.IO.File.ReadAllLines(filename);
-
-    foreach (string line in lines)
+    if (!File.Exists("goals.txt"))
     {
-        string[] parts = line.Split(",");
+        Console.WriteLine("No saved goals found.");
+        return;
+    }
+
+    string[] lines = File.ReadAllLines("goals.txt");
+    _score = int.Parse(lines[0]);
+    _goals.Clear();
+
+    for (int i = 1; i < lines.Length; i++)
+    {
+        string[] parts = lines[i].Split(",");
         string goalType = parts[0];
 
         if (goalType == "SimpleGoal")
@@ -194,6 +183,8 @@ public class GoalManager
             _goals.Add(new ChecklistGoal(name, desc, points, completed, target, bonus));
         }
     }
+
+    Console.WriteLine("Goals loaded.");
 }
 
     

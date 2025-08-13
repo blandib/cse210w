@@ -10,7 +10,11 @@ public class EternalGoal : Goal
 
     public override string GetStringRepresentation()
     {
+        return $"EternalGoal,{_shortName},{_description},{_points}";
+    }
+
+    public override string GetDisplayString()
+    {
         return $"[∞] {_shortName} ({_description})";
     }
-   
 }
